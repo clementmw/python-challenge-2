@@ -1,18 +1,24 @@
 
-class customer:
+class Customer:
 
     def __init__ (self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
         
     
-    def first_name (self):
+    def set_first_name (self):
         return self.first_name
     
-    def last_name (self):
+    def set_last_name (self):
         return self.last_name
     
-    def family_namae (self):
-        return self.first_name + self.last_name
+    def set_family_namae (self):
+        return f"{self.first_name} {self.last_name}"
+
+mwangi = Customer("mwangi", "clement")
+
+print (mwangi.set_family_namae())
+
+
 
     
