@@ -21,7 +21,14 @@ class Restaurant:
             unique_customers.add(review.customer)
         return list(unique_customers)
     
+    #Restaurant average_star_rating()`
+    #returns the average star rating for a restaurant based on its reviews
     
+    def average_star_rating(self):
+        total_rating = 0
+        for review in self.reviews:
+            total_rating += review.rating
+        return total_rating / len(self.reviews)
 
 restrant = Restaurant ("chapo baze")
 print(restrant.name)
