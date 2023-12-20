@@ -1,4 +1,3 @@
-#from customer import  customer
 
 class Review:
     all_review = []
